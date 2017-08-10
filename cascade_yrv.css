@@ -1,0 +1,263 @@
+/* CSS file for "yrv's webpage"
+leftMenu modified from http://www.w3.org/Style/Examples/007/menus.html
+dvp by Yariv Levy
+Thanks to Gal Niv, Megan Olsen, and Kun Tu
+-
+May 29, 2007 - Amherst, MA v1.0
+October, 2007 - Amherst, MA v1.1
+October, 2008 - Amherst, MA v2.0
+December, 2008 - Amherst, MA v2.1
+July, 2009 - Amherst, MA v2.2
+*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+	font-size: 15px;
+	margin: 0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	text-align: justify;
+	background-image:url("imgs/sfondoW3.png");
+	background-repeat:repeat-x;
+	background-attachment:fixed;
+}
+
+#content {
+	width: 80%;
+	margin: 0 0 0 13%;
+	padding:33px 0px 0px 0px;
+}
+
+#mainMenu{
+	font-size: 13px;
+	font-weight: bold;
+	width: 100%;
+	min-width: 575px;
+	height: 33px;
+	position: fixed;
+	z-index: 1;
+	margin: 0 auto;
+	padding:0px 0px 0px 0px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+}
+
+#leftMenu {
+	margin: 0;
+	font-size: 13px;
+	text-align: center;
+	position: fixed;
+	top: 69px;
+	left: 1%;
+	width: 11%;
+	display: block;
+	line-height: 1.1px;
+}
+
+p {
+	line-height: 21px;
+	padding:0px 0px 0px 3px;
+}
+p.margins {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+p.margins2 {
+	font-style: italic;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+p.margins_table_left_side {
+	margin-left: 3%;
+	margin-right: 7%;
+}
+
+a:link {
+	color: #881111;
+}
+a:visited {
+	color: #881111;
+}
+a:active {
+	color: #E6E6FA;
+}
+a:hover {
+	background: #E6E6FA;
+}
+.menu a:link {
+	color: #111188;
+}
+.menu a:visited {
+	color: #111188;
+}
+.menu a:active {
+	color: #E6E6FA;
+}
+.menu a:hover {
+	background: #E6E6FA;
+}
+.mainMenu a:link {
+	color: #111188;
+}
+.mainMenu a:visited {
+	color: #111188;
+}
+.mainMenu a:active {
+	color: #E6E6FA;
+}
+.mainMenu a:hover {
+	background: #E6E6FA;
+}
+.center {
+	margin:0 auto;
+}
+
+table {
+	text-align: justify;
+}
+
+table.mainText {
+	border-style: solid;
+	border-width: thin;
+	border-color: #999999;
+	margin:0 auto;
+}
+
+table.menu {
+	line-height: 120%;
+	text-align: center;
+	width: 100%;
+}
+
+table.mainMenu {
+	line-height: 25px;
+	text-align: center;
+	width: 100%;
+}
+
+td.td20 {
+	width: 20px;
+}
+
+td.center {
+	text-align:center;
+}
+
+div.center{
+	text-align:center;
+}
+
+div.footer {
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+}
+
+div.Title {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+div.subTitle {
+	font-size: 21px;
+	color: #222222;
+	font-weight: bold;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+div.subTitleCenter {
+	font-size: 15px;
+	color: #222222;
+	margin-left: 6%;
+	margin-right: 6%;
+	text-align: center;
+}
+
+div.subTitle2 {
+	font-size: 15px;
+	font-weight: normal;
+	text-align: center;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+div.subTitle3 {
+	font-size: 9px;
+	font-weight: normal;
+	text-align: center;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+div.dissTitle {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+div.additionalInfo {
+	font-size: 13px;
+	font-style: italic;
+	text-align: right;
+}
+
+div.additionalInfo2 {
+	font-size: 13px;
+	font-style: italic;
+	text-align: left;
+}
+
+hr {
+	height: 1px;
+	color: #999999;
+	background-color: #999999;
+	border: none;
+}
+
+li {
+	text-indent: 0px;
+	padding-top: 13px;
+	font-size: 15px;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+li.update {
+	text-indent: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 15px;
+	margin-left: 3%;
+	margin-right: 3%;
+	background-color: #FFF5CC;
+}
+
+iframe {
+	width: 640px;
+	height: 360px;
+	frameborder: 0;
+}
+
+
+/* Thanks Gal :-) , IE bug fix*/
+@media screen {
+	* html {
+		overflow: hidden;
+	}
+	* html body { 
+		overflow: auto;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	* html div#leftMenu {
+		position: absolute;
+	}
+}
